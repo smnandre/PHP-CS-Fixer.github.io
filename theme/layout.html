@@ -7,11 +7,11 @@
 {%- if url_root == '#' %}{% set url_root = '' %}{% endif %}
 
 {%- macro css() %}
-  <link href="{{ pathto('_static/css/reset-min.css', 1) }}" rel="stylesheet" type="text/css" />
-  <link href="{{ pathto('_static/css/base.css', 1) }}" rel="stylesheet" type="text/css" />
-  <link href="{{ pathto('_static/css/code.css', 1) }}" rel="stylesheet" type="text/css" />
-  <link href="{{ pathto('_static/css/colors.css', 1) }}" rel="stylesheet" type="text/css" />
-  <link href="{{ pathto('_static/pygments.css', 1) }}" rel="stylesheet" type="text/css" />
+  <link href="/_static/css/reset-min.css" rel="stylesheet" type="text/css" />
+  <link href="/_static/css/base.css" rel="stylesheet" type="text/css" />
+  <link href="/_static/css/code.css" rel="stylesheet" type="text/css" />
+  <link href="/_static/css/colors.css" rel="stylesheet" type="text/css" />
+  <link href="/_static/pygments.css" rel="stylesheet" type="text/css" />
 
   {%- for cssfile in css_files %}
     <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
@@ -57,7 +57,7 @@
         <div class="illustration png_fix">
           <div class="content">
             <div class="sensio_product">
-              <img class="png_fix" src="{{ pathto('_static/images/sensio-labs-product.png', 1) }}" alt="a Sensio Labs Product" />
+              <img class="png_fix" src="/_static/images/sensio-labs-product.png" alt="a Sensio Labs Product" />
             </div>
             <div class="clearfix">
               <div class="logo_header"><a href="/">{{ project }}</a></div>
@@ -76,7 +76,7 @@
           <div class="links_intro">
             <ul>
               <li>
-                <a href="./download/php-cs-fixer-v3.phar"><img class="install_now png_fix" src="{{ pathto('_static/images/install_now.png', 1) }}" alt="Install now" /></a>
+                <a href="/download/php-cs-fixer-v3.phar" target="_blank" download="php-cs-fixer-v3.phar"><img class="install_now png_fix" src="/_static/images/install_now.png" alt="Install now" /></a>
               </li>
             </ul>
           </div>
@@ -90,7 +90,7 @@
     {%- block footer %}
       <div class="ft">
         <div class="content">
-          The <a href="{{ pathto('_static/images/logo.png', 1) }}">logo</a> is &copy; 2010-2022 Sensio Labs
+          The <a href="/_static/images/logo.png">logo</a> is &copy; 2010-2022 Sensio Labs
         </div>
       </div>
     {%- endblock %}
